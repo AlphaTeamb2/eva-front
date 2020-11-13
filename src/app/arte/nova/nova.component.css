@@ -1,0 +1,22 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+*{
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.nova-art .nome{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn{
+  position: relative;
+  border-radius: 220px;
+  background-color: rgb(46, 52, 61);
+  color: white;
+}
+.btn:hover{
+  background-color: rgb(77, 87, 102);
+}

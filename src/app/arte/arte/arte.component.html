@@ -1,0 +1,29 @@
+  <div class="card cartao-arte">
+    <div class="card-body">
+
+      <h1 class="card-title nome">{{ artes.tipoArte }}: {{ artes.nome}}</h1>
+
+      <hr />
+      <div class="card-content">
+        <div>
+          <label>Descrição:</label>
+          <p class="card-text">{{ artes.descricao }}</p>
+          <br>
+        </div>
+        <div>
+          <label>Valor:</label>
+          <span>{{ artes.valor | number:'1.2-2' }}</span>
+        </div>
+        <div>
+          <label>Data de Criação:</label>
+          <span>{{ artes.data | date:'dd/MM/yyyy' }}</span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a [routerLink]="['/arte', artes.idArte, 'comprar']" class="btn">Comprar</a>
+        <a routerLink="/artes">Voltar para a pesquisa</a>
+      </div>
+
+    </div>
+  </div>

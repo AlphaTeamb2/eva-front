@@ -1,0 +1,40 @@
+    <div class="container">
+      <div class="ui-g">
+        <div class="card artes" style="width: 15rem;" *ngFor="let a of arte">
+          <div class="card-body">
+            <div class="back-nome">
+              <a class="nome" [routerLink]="['/arte', a.idArte]">
+                <h5 class="card-title">{{a.nome}}</h5>
+              </a>
+            </div>
+            <hr />
+            <div>
+              <div>
+                <label>Data:</label>
+                <span>{{a.data | date:'dd/MM/yyyy'}}</span>
+              </div>
+              <div>
+                <label>Valor:</label>
+                <span>{{ a.valor | number:'1.2-2' }}</span>
+              </div>
+            </div>
+            <a pButton class="btn" icon="fa-pencil" pTooltip="Editar"
+                tooltipPosition="top"
+                [routerLink]="['/artes', a.idArte]"
+                *ngIf="auth.temPermissao('ROLE_CADASTRAR_ARTE')"
+                >
+            </a>
+            <a pButton class="btn" icon="fa-trash" style="color: white;" pTooltip="Excluir"
+              tooltipPosition="top"
+              (click)="excluir(a.idArte)"
+              *ngIf="auth.temPermissao('ROLE_EXCLUIR_ARTE')"
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <a pButton icon="fa-plus" class="nova" routerLink="/artes/nova"
+      *ngIf="auth.temPermissao('ROLE_CADASTRAR_ARTE')" pTooltip="Nova arte"
+      >
+    </a>
+    </div>

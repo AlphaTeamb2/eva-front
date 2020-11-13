@@ -1,0 +1,78 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+
+
+}
+
+.card{
+  position: relative;
+
+  justify-content: space-around !important;
+
+  display: flex;
+}
+
+.nome{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+
+  color: rgb(255, 255, 255);
+}
+
+.back-nome{
+  background-color:  rgb(46, 52, 61);
+  border-radius: 20px;
+}
+.back-nome:hover{
+  background-color: rgb(77, 87, 102);
+  border-radius: 20px;
+}
+.back-nome a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.btn{
+  background-color: rgb(46, 52, 61);
+  color: white;
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  width: 20%;
+  height: 20%;
+}
+.btn:hover{
+  background-color: rgb(77, 87, 102) !important;
+  border: none !important;
+}
+
+.nova{
+  position: fixed;
+
+  bottom:10px;
+  right:10px;
+
+  justify-content: space-around !important;
+
+
+  font-size: 24px;
+
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+
+  border-radius: 30px;
+  background-color: rgb(46, 52, 61);
+  border: none !important;
+
+
+}
+.nova:hover{
+  background-color: rgb(77, 87, 102) !important;
+  border: none !important;
+}

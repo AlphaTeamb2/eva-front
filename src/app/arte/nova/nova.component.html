@@ -1,0 +1,65 @@
+<div class="container">
+  <form #a="ngForm" autocomplete="off" (ngSubmit)="salvar(a)">
+
+    <div class="ui-g nova-art">
+      <div class="ui-g-12 nome">
+        <h1>{{ editando ? 'Edição de' : 'Nova' }} Arte</h1>
+        <hr />
+      </div>
+
+
+      <!-- <div class="custom-file ui-g">
+        <label class="custom-file-label" for="customFile" id="customFileLabel">Selecionar arquivo</label>
+        <input class="custom-file-input" type="file" name="foto" #foto="ngModel" enctype="multipart/form-data"
+        [(ngModel)]="artes.imagem" id="customFile" (change)="inputFileChange($event)" (change)="onChange($event)" value="foto"/>
+      </div> -->
+
+      <div class="ui-g-12">
+        <p-selectButton name="tipos" class="tipo" [options]="tipos"
+          [(ngModel)]="artes.tipoArte"
+          #tipo></p-selectButton>
+      </div>
+
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+        <label>Nome</label>
+        <input pInputText type="text" name="nome"
+          [(ngModel)]="artes.nome"
+          #nome="ngModel" required minlength="5">
+
+      </div>
+      <div class="ui-g-6 ui-md-3 ui-fluid">
+        <label>Data de Criação</label>
+        <p-calendar name="data" dateFormat="dd/mm/yy"
+          [inline]="false" [readonlyInput]="false" [showIcon]="false"
+          [(ngModel)]="artes.data"
+          #data="ngModel" required></p-calendar>
+
+      </div>
+
+      <div class="ui-g-12 ui-md-9 ui-fluid">
+        <label>Descrição</label>
+        <input pInputText type="text" name="descricao"
+          [(ngModel)]="artes.descricao"
+          #nome="ngModel" required minlength="5">
+
+      </div>
+
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+        <label>Valor</label>
+        <input pInputText type="text" name="valor" placeholder="0,00"
+          currencyMask [options]="{ prefix: '', thousands: '.', decimal: ',', allowNegative: false }"
+          [(ngModel)]="artes.valor"
+          required>
+      </div>
+
+      <div class="ui-g-12">
+        <button pButton type="submit" label="Salvar" class="btn" [disabled]="a.invalid"></button>
+        <button pButton type="button" label="Novo" class="btn"
+          (click)="novo(a)" ></button>
+        <a routerLink="/artes">Voltar para a pesquisa</a>
+      </div>
+    </div>
+
+  </form>
+</div>
+

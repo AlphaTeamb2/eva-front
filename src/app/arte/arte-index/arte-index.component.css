@@ -1,0 +1,678 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+* {
+  padding: 0;
+  margin: 0;
+
+
+}
+
+.zoomin {
+  overflow: hidden;
+}
+
+.zoomin img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoomin:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.text-item {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 60px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: white;
+  font-weight: 7;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.836);
+  text-align: center;
+
+}
+
+.text-item p {
+  font-size: 35px;
+  text-shadow: 1px 1px black;
+  font-family: 'Nunito', sans-serif;
+}
+
+.text-item a {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: -60%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: black;
+  font-weight: 20;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (max-width: 1182px) {
+  .text-item {
+      bottom: 20%;
+  }
+  .text-item p {
+      font-size: 35px;
+  }
+  .text-item a {
+      bottom: -40%;
+  }
+}
+
+@media (max-width: 991px) {
+  .text-item {
+      bottom: 50%;
+  }
+  .text-item p {
+      font-size: 35px;
+  }
+  .text-item a {
+      bottom: -100%;
+  }
+}
+
+@media (max-width: 773px) {
+  .text-item {
+      bottom: 45%;
+  }
+  .text-item p {
+      font-size: 50px;
+  }
+  .text-item a {
+      bottom: -100%;
+  }
+}
+
+@media (max-width: 489px) {
+  .text-item {
+      bottom: 50%;
+  }
+  .text-item p {
+      font-size: 40px;
+  }
+}
+
+@media (max-width: 340px) {
+  .text-item {
+      bottom: 40%;
+  }
+  .text-item p {
+      font-size: 40px;
+  }
+  .text-item a {
+      bottom: -80%;
+  }
+}
+
+.text-item2 {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 70px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: white;
+  font-weight: 7;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.836);
+  text-align: center;
+}
+
+.text-item2 p {
+  font-size: 35px;
+  text-shadow: 1px 1px black;
+}
+
+@media (max-width: 1182px) {
+  .text-item2 {
+      bottom: 20%;
+  }
+  .text-item2 p {
+      font-size: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  .text-item2 {
+      bottom: 50%;
+  }
+  .text-item2 p {
+      font-size: 35px;
+  }
+}
+
+@media (max-width: 773px) {
+  .text-item2 {
+      bottom: 45%;
+  }
+  .text-item2 p {
+      font-size: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .text-item2 {
+      bottom: 50%;
+  }
+  .text-item2 p {
+      font-size: 40px;
+  }
+}
+
+@media (max-width: 340px) {
+  .text-item2 {
+      bottom: 40%;
+  }
+  .text-item2 p {
+      font-size: 40px;
+  }
+}
+
+.carousel-caption {
+  text-shadow: 1px 0.8px black;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.apresent {
+  background: #212121;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+.apresent h1 {
+  position: relative;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 0.8px rgb(85, 54, 54);
+}
+
+@media(max-width: 510px) {
+  .apresent h1 {
+      font-size: 30px;
+  }
+}
+
+@media(max-width: 420px) {
+  .apresent h1 {
+      font-size: 25px;
+  }
+}
+
+@media(max-width: 380px) {
+  .apresent h1 {
+      font-size: 25px;
+  }
+}
+
+.apresent a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.apresent a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.login {
+  box-shadow: 0px 10px 10px 0px;
+  width: 50%;
+  left: 25%;
+}
+
+.login {
+  box-shadow: 0px 10px 10px 0px;
+  width: 30%;
+  left: 35%;
+}
+
+.login h1 {
+  text-align: center;
+}
+
+.login a {
+  display: block;
+  font-size: 12px;
+}
+
+.login button {
+  text-align: center;
+}
+
+@media (max-width:825px) {
+  .login a {
+      display: block;
+      font-size: 15px;
+  }
+}
+
+@media (max-width:824px) {
+  .login h1 {
+      text-align: center;
+      font-size: 50px;
+      width: 20px;
+  }
+  .login {
+      width: 60%;
+      left: 20%;
+  }
+}
+
+@media (max-width:360px) {
+  .login h1 {
+      text-align: center;
+      font-size: 50px;
+      width: 20px;
+  }
+  .login {
+      width: 60%;
+      left: 20%;
+  }
+}
+
+.filter {
+  text-align: center;
+  background-color: #E0E0E0;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media(max-width:1326px) {
+  .filter {
+      position: relative;
+      text-align: center;
+      background-color: #E0E0E0;
+      height: 0%;
+      max-width: 100%;
+      width: 100%;
+  }
+  .filter button {
+      display: inline;
+  }
+}
+
+@media(max-width:906px) {
+  .filter {
+      position: relative;
+      text-align: center;
+      background-color: #E0E0E0;
+      height: 0%;
+      max-width: 100%;
+      width: 100%;
+  }
+  .filter button {
+      display: inline;
+      font-size: 15px;
+  }
+}
+
+@media(max-width:883px) {
+  .filter {
+      position: relative;
+      text-align: center;
+      background-color: #E0E0E0;
+      height: 0%;
+      max-width: 100%;
+      width: 100%;
+  }
+  .filter button {
+      display: inline;
+      font-size: 15px;
+  }
+}
+
+.foot {
+  position: relative;
+  background: #212121;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.foot a {
+  position: relative;
+  background: #212121;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.client {
+  box-shadow: 0px 10px 10px 0px;
+  width: 60%;
+  left: 20%;
+}
+
+.client h1 {
+  text-align: center;
+  text-shadow: 1px 0.8px rgb(102, 98, 124);
+}
+
+.client a {
+  display: block;
+  font-size: 12px;
+}
+
+.client button {
+  text-align: center;
+}
+
+@media (max-width:825px) {
+  .client a {
+      display: block;
+      font-size: 15px;
+  }
+}
+
+@media (max-width:824px) {
+  .client h1 {
+      text-align: center;
+      font-size: 30px;
+  }
+  .client {
+      width: 80%;
+      left: 10%;
+  }
+}
+
+@media (max-width:360px) {
+  .client h1 {
+      text-align: center;
+      font-size: 50px;
+  }
+  .client {
+      width: 80%;
+      left: 10%;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.junto {
+  display: inline-block;
+  width: 49%;
+}
+
+.junto1 {
+  display: inline-block;
+  width: 49%;
+}
+
+.junto2 {
+  display: inline-block;
+  width: 49%;
+}
+
+.junto3 {
+  display: inline-block;
+  width: 49%;
+}
+
+.junto4 {
+  display: inline-block;
+  width: 49%;
+}
+
+.car {
+  color: white;
+}
+
+.car a:link {
+  text-decoration: none;
+}
+
+.car a:active {
+  text-decoration: none;
+  color: #322A28;
+}
+
+.juntocar {
+  display: inline-block;
+}
+
+.clientecar {
+  box-shadow: 0px 10px 10px 0px;
+  width: 80%;
+  left: 10%;
+}
+
+@media (max-width:1248px) {
+  .clientecar {
+      width: 82%;
+      left: 9%;
+  }
+}
+
+.clientecar h1 {
+  text-align: center;
+  text-shadow: 1px 0.8px rgb(102, 98, 124);
+  font-size: 40px;
+}
+
+.clientecar h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (max-width:824px) {
+  .clientecar h1 {
+      text-align: center;
+      font-size: 30px;
+  }
+  .clientecar {
+      width: 80%;
+      left: 10%;
+  }
+}
+
+@media (max-width:411px) {
+  .clientecar {
+      width: 100%;
+      left: 0%;
+  }
+}
+
+@media (max-width:360px) {
+  .clientecar h1 {
+      text-align: center;
+      font-size: 50px;
+  }
+  .clientecar h2 {
+      font-size: 20px;
+  }
+  .clientecar {
+      width: 100%;
+      left: 0%;
+  }
+  .juntocar {
+      width: 60%;
+  }
+  .dentro {
+      width: 20%;
+  }
+  .dentro2 {
+      width: 40%;
+  }
+}
+
+.dentro {
+  display: inline-block;
+  box-shadow: 1px 1px 10px 1px;
+  width: 30%;
+}
+
+.dentro2 {
+  display: inline-block;
+  box-shadow: 1px 1px 10px 1px;
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  .dentro {
+      box-shadow: 1px 1px 10px 1px;
+      display: block;
+  }
+  .dentro2 {
+      box-shadow: 1px 1px 10px 1px;
+  }
+}
+
+.cover {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  background: url('../../capaback/img2.jpg') top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media(max-width:600px) {
+  .cover {
+      width: 100%;
+      height: 35vh;
+      position: relative;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+}
+
+@media(max-width:375px) {
+  .cover {
+      width: 100%;
+      height: 25vh;
+      position: relative;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+}
+
+@media (min-width: 1024px) {
+  .art {
+      background-attachment: fixed;
+  }
+}
+
+.capa {
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+  top: -10%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.capa img {
+  margin-top: -30px;
+}
+
+.capa h2 {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+}
+
+.coversobre {
+  width: 100%;
+  height: 14vh;
+  position: relative;
+  background: url('../../capaback/img2.jpg') top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media(max-width:800px) {
+  .coversobre {
+      width: 100%;
+      height: 10vh;
+      position: relative;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+}
+
+@media(max-width:375px) {
+  .coversobre {
+      width: 100%;
+      height: 10vh;
+      position: relative;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+}
+
+.capasobre h2 {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: 100px;
+  text-shadow: 3px 3px rgb(63, 63, 63);
+
+  font-family: 'Nunito', sans-serif;
+
+
+}
+
+.capasobre a:hover{
+  text-decoration: none;
+}
+.capasobre:hover{
+  background-color: rgba(255, 255, 255, 0.274);
+}
+
+@media(max-width:1000px) {
+  .capasobre h2 {
+      font-size: 40px;
+  }
+}
+
+@media(max-width:600px) {
+  .capasobre h2 {
+      font-size: 35px;
+  }
+}
+
+@media(max-width:500px) {
+  .capasobre h2 {
+      font-size: 25px;
+  }
+}
